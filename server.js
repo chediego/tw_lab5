@@ -1,9 +1,18 @@
-var express = require("express"); 
-var app = express(); 
+var express = require('express');
+var routes = require('./routes');
+var http = require('http');
+var reactViews = require('express-react-views');
 
-app.get('/',(req, res)=>{
-res.send("<h1> Esto está funcionando</h1>");
-}); 
+var app = express();
+
+// all environments
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jsx');
+app.engine('jsx', reactViews.createEngine());
+
+app.get('/', require('./routes').index);
+app.post('/usuarios', require('./routes').usuarios);
+
 
 app.listen(8080, ()=>{
 

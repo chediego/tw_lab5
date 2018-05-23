@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "lab5",
   "version": "1.0.0",
   "description": "Laboratorio 5: uso de template engine react y creación de 3 páginas web.",
@@ -8,7 +8,11 @@
   },
   "author": "@klobertanz, @chediego",
   "license": "ISC",
- "git repository":"https://github.com/chediego/tw_lab5.git", "dependencies": {
-    "express": "^4.16.3"
+  "git repository": "https://github.com/chediego/tw_lab5.git",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-react-views": "^0.10.5",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
   }
 }
