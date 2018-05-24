@@ -11,7 +11,8 @@ app.set('view engine', 'jsx');
 app.engine('jsx', reactViews.createEngine());
 
 app.get('/', require('./routes').index);
-app.post('/usuarios', require('./routes').usuarios);
+app.get('/usuarios', require('./routes').usuarios);
+app.get('/ligas',require('./routes').ligas)
 
 
 app.listen(8080, ()=>{
