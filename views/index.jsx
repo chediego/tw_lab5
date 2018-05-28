@@ -1,9 +1,10 @@
 var React = require('react');
+import MenuComponente from './MenuComponente';
+class Indexpage extends React.Component {
 
-class HelloMessage extends React.Component {
   render() {
-    return <h1>Hello {this.props.name}</h1>;
+    return  <MenuComponente nombre="diego"/>;
   }
 }
 
-module.exports = HelloMessage;
+module.exports = Indexpage;
