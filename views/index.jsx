@@ -1,9 +1,27 @@
 var React = require('react');
-import MenuComponente from './MenuComponente';
+import HeaderComponent from './HeaderComponent';
+import ContentComponent from './ContentComponent';
+import FooterComponent from './FooterComponent';
 class Indexpage extends React.Component {
-
+  constructor(){
+    super();
+  }
   render() {
-    return  <MenuComponente nombre="diego"/>;
+    let contenido = 'Bienvenidos a la pagina, este es el index, presiona usuarios para ver usuarios registrados y ligas para ver las ligas de futbol';
+    let header={
+      width : '100%',
+      height: '100%',
+      maring: 'auto'
+    }
+    return (
+      <div style={header}>
+        <HeaderComponent>
+        </HeaderComponent>
+        <ContentComponent informacion={contenido} contenido = {[]}>
+        </ContentComponent>
+        <FooterComponent>
+        </FooterComponent>
+      </div>);
   }
 }
 

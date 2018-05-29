@@ -1,5 +1,5 @@
 exports.index = function(req, res) {
-  res.render('index', {name: 'baris'});
+  res.render('index');
 };
 exports.usuarios = function(req, res) {
   console.log(req)

@@ -15,7 +15,7 @@ app.get('/usuarios', require('./routes').usuarios);
 app.get('/ligas',require('./routes').ligas)
 
 
-app.listen(8080, ()=>{
+app.listen(3000, ()=>{
 
 	console.log('Servidor corriendo...');
 });
